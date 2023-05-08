@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #ae00ae, #6f006f);
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 15px;
+    color:white;
+    
+}
+fieldset{
+    border: 3px solid #9c009c;
+}
+legend{
+    border: 1px solid #9c009c;
+    padding: 10px;
+    text-align: center;
+    background-color: #9c009c;
+    border-radius: 9px;
+    color:white;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;    
+}
+
+.inputLabel{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .inputLabel,
+.inputUser:valid ~ .inputLabel{
+    top: -20px;
+    font-size: 12px;
+    color: #9c009c;
+}
+
+option{
+    color: black;
+}
+
+#submit{
+    background-image: linear-gradient(to right, #ae00ae, #6f006f);
+    width: 67%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 9px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#reset{
+    background-image: linear-gradient(to right, #ae00ae, #6f006f);
+    width: 30%;
+    border: none;
+    padding: 15px;
+    margin-left: 5px;
+    color:white;
+    font-size: 15px;
+    border-radius: 9px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
